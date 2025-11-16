@@ -6,13 +6,14 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "webtop",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-06-19",
+	"compatibility_date": "2025-11-16",
 	"containers": [
 		{
 			"name": "webtop",
 			"class_name": "Webtop",
 			"image": "./Dockerfile",
 			"max_instances": 10,
+			 "instance_type": "standard-3",
 		},
 	],
 	"migrations": [
